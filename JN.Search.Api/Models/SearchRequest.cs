@@ -11,12 +11,10 @@ namespace JN.Search.Api.Models
 
         [FromQuery(Name = "lat")]
         [Required]
-        [Range(-90.0, 90.0)]
         public double Lat { get; init; }
 
         [FromQuery(Name = "lng")]
         [Required]
-        [Range(-180.0, 180.0)]
         public double Lng { get; init; }
     }
 }
