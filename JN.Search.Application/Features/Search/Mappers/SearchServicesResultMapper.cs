@@ -4,9 +4,9 @@ using JN.Search.Domain.Entities;
 
 namespace JN.Search.Application.Features.Search.Mappers;
 
-public static class ProvidedServiceMappers
+public static class SearchServicesResultMapper
 {
-    public static SearchServicesResult Map(this ProvidedService service, double originLat, double originLng, int score)
+    public static SearchServicesResult Map(ProvidedService service, double originLat, double originLng, int score)
     {
         var km = HaversineDistanceHelper.Km(originLat, originLng, service.Latitude, service.Longitude);
 

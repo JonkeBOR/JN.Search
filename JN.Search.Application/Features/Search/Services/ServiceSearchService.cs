@@ -56,6 +56,6 @@ public sealed class ServiceSearchService : IServiceSearchService
     private static (SearchServicesResult result, int score, double distanceKm) Project(double originLat, double originLng, Domain.Entities.ProvidedService service, int score)
     {
         var distanceKm = HaversineDistanceHelper.Km(originLat, originLng, service.Latitude, service.Longitude);
-        return (service.Map(originLat, originLng, score), score, distanceKm);
+        return (SearchServicesResultMapper.Map(service, originLat, originLng, score), score, distanceKm);
     }
 }
