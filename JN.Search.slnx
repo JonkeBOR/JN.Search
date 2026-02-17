@@ -5,5 +5,7 @@
     <Project Path="JN.Search.Domain/JN.Search.Domain.csproj" />
     <Project Path="JN.Search.Infrastructure/JN.Search.Infrastructure.csproj" />
   </Folder>
-  <Folder Name="/test/" />
+  <Folder Name="/test/">
+    <Project Path="JN.Search.Application.UnitTests/JN.Search.Application.UnitTests.csproj" Id="67a59291-ce59-47c2-acad-6181b77756db" />
+  </Folder>
 </Solution>
