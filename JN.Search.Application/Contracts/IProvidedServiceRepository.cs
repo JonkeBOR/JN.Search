@@ -1,6 +1,6 @@
 using JN.Search.Domain.Entities;
 
-namespace JN.Search.Application.Interfaces;
+namespace JN.Search.Application.Contracts;
 
 public interface IProvidedServiceRepository
 {

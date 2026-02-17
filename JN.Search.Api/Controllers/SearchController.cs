@@ -17,7 +17,7 @@ public sealed class SearchController(IMediator mediator) : ControllerBase
     public async Task<ActionResult<SearchServicesResponse>> Get([FromQuery] SearchRequest request, CancellationToken cancellationToken)
     {
         var query = new SearchServicesQuery(request.Name, request.Lat, request.Lng);
-        var response = await _mediator.Send(query,cancellationToken);
+        var response = await _mediator.Send(query, cancellationToken);
         return Ok(response);
     }
 }
