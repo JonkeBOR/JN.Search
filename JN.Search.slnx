@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="JN.Search.Api/JN.Search.Api.csproj" />
+    <Project Path="JN.Search.Application/JN.Search.Application.csproj" />
+    <Project Path="JN.Search.Domain/JN.Search.Domain.csproj" />
+    <Project Path="JN.Search.Infrastructure/JN.Search.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/test/" />
+</Solution>
