@@ -55,7 +55,6 @@ public sealed class SearchServicesQueryHandler : IRequestHandler<SearchServicesQ
         var totalHits = scored.Length;
 
         var results = scored
-            .Take(request.Limit)
             .Select(x => x.result)
             .ToArray();
 

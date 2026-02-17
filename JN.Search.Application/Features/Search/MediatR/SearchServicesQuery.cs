@@ -3,4 +3,4 @@ using MediatR;
 
 namespace JN.Search.Application.Features.Search.MediatR;
 
-public sealed record SearchServicesQuery(string Name, double Lat, double Lng, int Limit) : IRequest<SearchServicesResponse>;
+public sealed record SearchServicesQuery(string Name, double Lat, double Lng) : IRequest<SearchServicesResponse>;
