@@ -1,4 +1,4 @@
-using JN.Search.Application.Interfaces;
+using JN.Search.Application.Contracts;
 using JN.Search.Domain.Entities;
 using JN.Search.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
